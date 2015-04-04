@@ -22,7 +22,7 @@ pub struct Registry {
 
 pub type Result<T> = result::Result<T, Error>;
 
-#[derive(PartialEq, Copy)]
+#[derive(PartialEq, Copy, Clone)]
 pub enum Auth {
     Authorized,
     Unauthorized
